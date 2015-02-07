@@ -1,0 +1,8 @@
+In order to add file in your any GitHub repository, you need to:
+1) Add
+2) Commit
+3) Push
+
+But if you havn't defined origin, define it first by using command:
+git remote add origin -m http://github.com/<your user name>/<Repository name>.git
+
