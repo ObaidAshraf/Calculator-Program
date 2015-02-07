@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+	int n1, n2, ans;
+	char op, c;
+	do
+	{
+	printf("\nEnter First number: ");
+	scanf("%d", &n1);
+	printf("\nEnter Second number: ");
+	scanf("%d", &n2);
+	printf("\nEnter Operator: ");
+	op = getche();
+	switch(op)
+	{
+	case '+':
+		ans = n1 + n2;
+		break;
+	case '-':
+		ans = n1 - n2;
+		break;
+	case 'x':
+		ans = n1*n2;
+		break;
+	case '/':
+		ans = n1/n2;
+		break;
+	default:
+		printf("Invalid Operator!");
+	}
+	printf("\nThe answer of %d %c %d is: %d", n1, op, n2, ans );
+	printf("\n\nDo you want to Continue??\nType y for Yes: ");
+	c = getche();
+	}while(c=='y' || c=='Y');
+}
